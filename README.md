@@ -1,9 +1,9 @@
 # Markdown-reports
 Guide on how to create documentation using Markdown in R or Python
 
-This is a initial Markdown document in R to produce HTML output websites. It is the best way to create documentation and produce Learning materials to share among R and Python developers. 
+This is a initial Markdown template document in R to produce HTML output files. It is the best way to create documentation and produce Learning materials to share among R and Python developers. 
 
-As we learn new was to enrich this Markdown document, we will add new sections including tips and standards to code and create Markdown documentation for our projecs in a consistent way allowing reproducibility of each analysis we describe and discuss on this R and Python forum. 
+As we learn new ways to enrich this Markdown document we will add new sections, including tips and standards to documentation for our projecs in a consistent way allowing reproducibility of each analysis we describe and discuss in our R and Python forum. 
 
 I have saved an initial .Rmd file with a set of recommendations on how to create consistent R Markdown HTML output reports, alongside the HTML output once it is rendered. 
 
