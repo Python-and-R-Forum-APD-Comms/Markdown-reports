@@ -1,0 +1,82 @@
+---
+title: "Markdown templates"
+author: "PLR"
+date: "`r Sys.Date()`"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+---
+
+```{r setup, include=FALSE}
+library(knitr)
+knitr::opts_chunk$set(cache=TRUE, warning=FALSE, message= FALSE, echo = TRUE, dpi= 180, fig.width = 8, fig.height = 5)
+
+library(tidyverse)
+library(tidymodels)
+```
+
+## 0. AIM
+
+This is a initial Markdown document in R to produce HTML output websites. It is the best way to create documentation and produce Learning materials to share among R and Python developers. 
+
+As we learn new was to enrich this Markdown document, we will add new sections including tips and standards to code and create Markdown documentation for our projecs in a consistent way allowing reproducibility of each analysis we describe and discuss on this R and Python forum. 
+
+## 1. Section
+
+This is an example of a markdown document model in R. You can also include videos such as this one from Julia Silge using Tidymodels and recipes. Follow along all the steps she explains on this Youtube video to learn how to create end to end data models in R.
+<https://www.youtube.com/watch?v=dbXDkEEuvCU>.
+
+Basically, she shows how to predict which stays have children staying in the hotel room and which not.
+
+Let's build a model using recipes for [hotel bookings from this week's #tidytuesday data](https://github.com/rfordatascience/tidytuesday/blob/master/data/2020/2020-02-11/readme.md)
+
+This is another example of including a linnk to a Github website that explains how to move files within a Github repo to different folders
+
+[move files to new location](https://docs.github.com/en/repositories/working-with-files/managing-files/moving-a-file-to-a-new-location)
+
+### 1.1 Sub-section 
+
+To create a sub-section in our Markdown HTML document, we use two hashed for the sub-section markdown code. This sub-section will be displayed as nested under its parent section when document is rendered as HTML output.
+
+## 1. YAML design principles
+
+- Use in top YAML section date: date: "`r Sys.Date()`" to render date each time document is knitted 
+
+### 2. Define an initial R Chunck containing all document formating options
+
+- Include a R chunk right after YAML section to load all required libraries through your analysis
+
+  - Declare in this first section all required libraries for your analysis (tidyverse, tidy models)
+
+- Also in that initial chunk set knitter options using opts_chunk for the entire document 
+
+  - It applies to:  
+    - a) Warnings
+    - b) Figure sizes when rendering plots (dpi= 180, fig.width = 8, fig.height = 5)
+
+## 3. Markdown r chuncks output rules
+
+Arguments you can include inside r chunk several options to tailor your document output when rendering any R script
+
+- eval = FALSE : If you don't want any code chunks to run on your r chunk
+
+- echo = FALSE prevents code, but not the results from appearing in the finished file. This is a useful way to embed figures. Setting echo = TRUE, will make the r code to appear in the Markdown output
+
+## 4. Sections and sub-sections formatting principles
+
+As we can see in this markdown script, document **sections**  are defined by **two** hashes and document *sub-sections* by **three** hashes as shown below:
+
+## 4. This is a new Section
+
+### 4.1 This is a new sub-section from above Section
+
+## 5. Text formatting using HTML colours
+
+We can use HTML tabs to change format attributs of text and Sections and Sub-sections in any Markdown document. We have to specify the colour and then the text we apply that color format to. For the color to take effect on the text, the text must be enclosed into the span open and closing tags.
+
+### <span style="color:#0C50CA">*5.1 Sub-section blue colour*</span>
+
+### <span style="color:#29CA0C">*5.2 Sub-section green colour*</span>
+
+### <span style="color:#CA0C5D">*5.3 Sub-section red colour*</span>
