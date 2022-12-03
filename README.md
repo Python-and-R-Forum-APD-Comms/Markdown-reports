@@ -5,7 +5,9 @@ This is a Markdown template document in R to produce HTML output files. It is th
 
 As we learn new ways to enrich this Markdown document, we will be adding new sections. To create a collection of tips and coding standards to expand our  projects documentation in a consistent and robust way. This ensures reproducibility of each analysis we discuss in this coding forum. 
 
-I have saved an initial .Rmd file with a set of recommendations to create consistent R Markdown HTML reports, The HTML output file is also availablr on this repo.
+I have saved an initial .Rmd file with a set of recommendations to create consistent R Markdown HTML reports, The HTML output file is also available on this repo.
+
+
 
 This HTML file can be viewed with any web browser and used as an interactive document. It has been designed to include a side menu to ease navigation between sections.
 
